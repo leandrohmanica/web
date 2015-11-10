@@ -1,0 +1,89 @@
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  width: 970px;
+  margin: 0 auto;
+  background-color: #F0F0F0;
+}
+
+div#header {
+  height: 100px;
+  padding-left: 50px;
+  background-color: #009955;
+  line-height: 100px;
+  font-size: 38px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #FFF;
+  margin-bottom: 10px;
+}
+
+div#container {
+  background-color: #FFF;
+  color: #009955;
+  overflow: visible;
+}
+
+div#menu {
+  float: left;
+  width: 150px;
+}
+
+div#menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-color: #009955;
+}
+
+div#menu > ul > li {
+  position: relative;
+  font-weight: bold;
+}
+
+div#menu a {
+  padding: 10px 35px;
+  text-decoration: none;
+  color: #FFF;
+  display: block;
+  border-bottom: 1px solid #FFF;
+}
+
+div#menu ul li ul {
+  display: none;
+  position: absolute;
+  left: 150px;
+  top: 0px;
+  width: 155px;
+}
+div#menu ul li ul {
+  border-left: 5px solid #FFF;
+}
+
+div#menu > ul > li:hover ul {
+  display: block;
+}
+
+div#menu ul li a:hover {
+  background-color: #006B3B;
+}
+
+div#content {
+  padding: 0 10px;
+  width: 800px;
+  float: right;
+}
+
+div#content img {
+  float: right;
+  padding: 5px;
+}
+
+div#footer {
+  clear: both;
+  height: 35px;
+  line-height: 35px;
+  background-color: #009955;
+  text-align: right;
+  color: #FFF;
+  padding-right: 10px
+}
