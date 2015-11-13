@@ -58,7 +58,7 @@ nav#menu ul li a:hover {
 div#content {
   padding: 0 10px;
   width: 800px;
-  float: left;
+  float: right;
 }
 
 div#content img {
