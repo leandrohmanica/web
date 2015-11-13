@@ -20,24 +20,20 @@ div#header {
 div#container {
   background-color: #FFF;
   color: #009955;
-  overflow: visible;
 }
-/* menu >>> drop
-   menu > ul >>> drop_menu
-*/
 
-div#menu > ul > li {
+nav#menu > ul > li {
   float: left;
 }
 
-div#menu ul {
+nav#menu ul {
   margin: 0;
   padding: 0;
   list-style: none;
   font-weight: bold;
 }
 
-div#menu ul li a {
+nav#menu ul li a {
   display: block;
   width: 145px;
   padding: 10px 0;
@@ -47,24 +43,30 @@ div#menu ul li a {
   border-right: 5px solid #FFF;
   color: #FFF;
   background-color: #009955;
-  clear: both;
 }
 
-div#menu ul li a:hover {
+nav#menu ul li a:hover {
   background-color: #006B3B;
 }
 
-div#menu ul li ul {
+nav#menu ul li ul {
   position: absolute;
   display: none;
 }
 
-div#menu > ul > li:hover ul {
+/* Show submenu on mouse over */
+nav#menu > ul > li:hover ul {
   display: block;
 }
 
+nav#menu:after {
+  content: " ";
+  display: block;
+  clear: both;
+  height: 0;
+}
+
 div#content {
-  clear: left;
   padding: 1px 10px;
 }
 
@@ -77,6 +79,8 @@ div#footer {
   height: 35px;
   line-height: 35px;
   background-color: #009955;
+  font-size: 12px;
+  font-weight: bold;
   text-align: right;
   color: #FFF;
   padding-right: 10px
